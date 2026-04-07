@@ -10,7 +10,7 @@ namespace Intro_to_MonoGame
         private SpriteBatch _spriteBatch;
         Rectangle window;
         Texture2D dinoTexure;
-        Texture2D castleTexture;
+        Texture2D moonTexture;
 
 
         public Game1()
@@ -40,7 +40,7 @@ namespace Intro_to_MonoGame
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             dinoTexure = Content.Load<Texture2D>("dino");
 
-            castleTexture = Content.Load<Texture2D>("castle");
+            moonTexture = Content.Load<Texture2D>("moon corner bottom");
 
 
             // TODO: use this.Content to load your game content here
@@ -66,7 +66,7 @@ namespace Intro_to_MonoGame
             _spriteBatch.Draw(dinoTexure, new Vector2(10, 10), Color.White);
             _spriteBatch.Draw(dinoTexure, new Vector2(150, 100), Color.Thistle);
             _spriteBatch.Draw(dinoTexure, new Vector2(280, 200), Color.Fuchsia);
-            _spriteBatch.Draw(castleTexture, new Vector2(350, -5), Color.Fuchsia);
+            _spriteBatch.Draw(moonTexture, new Vector2(450, 200), Color.Ivory);
 
             _spriteBatch.End();
 
