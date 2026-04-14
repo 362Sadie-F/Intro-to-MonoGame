@@ -64,7 +64,7 @@ namespace Intro_to_MonoGame
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
 
-            _spriteBatch.Draw(summonTexture, new Vector2(-85, 215), Color.FloralWhite);
+            _spriteBatch.Draw(summonTexture, new Vector2(-85, 235), Color.FloralWhite);
             _spriteBatch.Draw(moonTexture, new Vector2(-15, -10),null, Color.White, 0f, Vector2.Zero, 1.0f, SpriteEffects.FlipHorizontally | SpriteEffects.FlipVertically, 1f);
             _spriteBatch.Draw(dinoTexure, new Vector2(350, 100),null, Color.Thistle, 0f, Vector2.Zero, 1.0f, SpriteEffects.FlipHorizontally, 1f);
             _spriteBatch.Draw(dinoTexure, new Vector2(110, 200), Color.Fuchsia);
