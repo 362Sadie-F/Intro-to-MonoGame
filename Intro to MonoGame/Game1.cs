@@ -11,7 +11,7 @@ namespace Intro_to_MonoGame
         Rectangle window;
         Texture2D dinoTexure;
         Texture2D moonTexture;
-
+        Texture2D summonTexture;
 
         public Game1()
         {
@@ -29,7 +29,7 @@ namespace Intro_to_MonoGame
             _graphics.PreferredBackBufferHeight = window.Height;
             _graphics.ApplyChanges();
 
-            this.Window.Title = "Topic 1 Trial";
+            this.Window.Title = "Topic 1 Assignment";
 
 
             base.Initialize();
@@ -42,6 +42,7 @@ namespace Intro_to_MonoGame
 
             moonTexture = Content.Load<Texture2D>("moon corner bottom");
 
+            summonTexture = Content.Load<Texture2D>("Summon2");
 
             // TODO: use this.Content to load your game content here
         }
@@ -63,10 +64,11 @@ namespace Intro_to_MonoGame
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
 
-            _spriteBatch.Draw(dinoTexure, new Vector2(10, 10), Color.White);
-            _spriteBatch.Draw(dinoTexure, new Vector2(150, 100), Color.Thistle);
-            _spriteBatch.Draw(dinoTexure, new Vector2(280, 200), Color.Fuchsia);
-            _spriteBatch.Draw(moonTexture, new Vector2(450, 200), Color.Ivory);
+            _spriteBatch.Draw(summonTexture, new Vector2(-85, 215), Color.FloralWhite);
+            _spriteBatch.Draw(moonTexture, new Vector2(-15, -10),null, Color.White, 0f, Vector2.Zero, 1.0f, SpriteEffects.FlipHorizontally | SpriteEffects.FlipVertically, 1f);
+            _spriteBatch.Draw(dinoTexure, new Vector2(350, 100),null, Color.Thistle, 0f, Vector2.Zero, 1.0f, SpriteEffects.FlipHorizontally, 1f);
+            _spriteBatch.Draw(dinoTexure, new Vector2(110, 200), Color.Fuchsia);
+            _spriteBatch.Draw(moonTexture, new Vector2(499, 197), Color.Ivory);
 
             _spriteBatch.End();
 
